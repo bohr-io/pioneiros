@@ -1,5 +1,20 @@
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent } from 'vue';
 import pioneers from './assets/pioneers.json'
+
+export default defineComponent({
+  data() {
+    return {
+      pioneers,
+    }
+  },
+  mounted() {
+    (this as any).$confetti.start();
+    setTimeout(() => {
+      (this as any).$confetti.stop();
+    }, 1000);
+  },
+});
 </script>
 
 <template>
@@ -59,13 +74,11 @@ import pioneers from './assets/pioneers.json'
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
-  /* width: 100vw; */
 }
 
 .pioneer__card {
   position: relative;
   flex-grow: 1;
-  background-color: rebeccapurple;
   width: 100%;
   aspect-ratio: 1/1;
   transition: transform 250ms ease-in-out;

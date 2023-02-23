@@ -27,6 +27,7 @@ body {
   padding: 10px;
   background-image: radial-gradient(50vw 50vh at center top, #E8485533 0%, #0E171D33 50vw);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 button {
