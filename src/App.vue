@@ -19,8 +19,10 @@ export default defineComponent({
 
 <template>
   <main>
-    <h1 class="bohr__title">Bohr.io</h1>
-    <div style="text-align: center;">
+    <h1 class="bohr__title">
+      <img width="500" height="125" src="/logo_bohr.png" alt="bohr.io" />
+    </h1>
+    <div class="hero__text">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
@@ -53,17 +55,20 @@ export default defineComponent({
 
 <style scoped>
 .bohr__title {
-  background: linear-gradient(180deg, #F26419 0%, #E84855 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  font-weight: 700;
   text-align: center;
-
-  font-size: 3.2em;
+  font-size: 0;
   line-height: 1.1;
   margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.bohr__title img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero__text {
+  text-align: center;
 }
 
 .pioneers__list {
@@ -122,7 +127,7 @@ export default defineComponent({
 }
 @media (min-width: 1280px) {
   .pioneers__list {
-    grid-template-columns: repeat(16, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 </style>
