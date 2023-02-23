@@ -1,30 +1,115 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import pioneers from './assets/pioneers.json'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <main>
+    <h1 class="bohr__title">Bohr.io</h1>
+    <div style="text-align: center;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
+    </div>
+    <ul class="pioneers__list">
+      <li
+        class="pioneer__card"
+        v-for="pioneer in pioneers"
+        :key="pioneer.user"
+      >
+        <a
+          :href="`https://github.com/${pioneer.user}`"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            class="pioneer__image"
+            width="80"
+            height="80"
+            :src="pioneer.imgURL"
+            alt=""
+          />
+          <p class="pioneer__name">{{ pioneer.user }}</p>
+        </a>
+      </li>
+    </ul>
+  </main>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.bohr__title {
+  background: linear-gradient(180deg, #F26419 0%, #E84855 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  text-align: center;
+
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-top: 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.pioneers__list {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  /* width: 100vw; */
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.pioneer__card {
+  position: relative;
+  flex-grow: 1;
+  background-color: rebeccapurple;
+  width: 100%;
+  aspect-ratio: 1/1;
+  transition: transform 250ms ease-in-out;
+}
+
+.pioneer__card:hover {
+  z-index: 10;
+  transform: scale(2);
+}
+
+.pioneer__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pioneer__name {
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  padding: 2px;
+  width: 100%;
+  background: linear-gradient(180deg, #F26419 0%, #E84855 100%);
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.5rem;
+  transition: opacity 250ms ease-in-out;
+}
+
+.pioneer__card:hover .pioneer__name {
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .pioneers__list {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1280px) {
+  .pioneers__list {
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+  }
 }
 </style>
