@@ -19,15 +19,9 @@ export default defineComponent({
 
 <template>
   <main>
-    <h1 class="bohr__title" data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="1" data-bohr-dist-file="index.html" data-bohr-dist-index="1">
-      <img width="500" height="125" src="/logo_bohr.png" alt="bohr.io" />
-    </h1>
-    <div class="hero__text" data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="2" data-bohr-dist-file="index.html" data-bohr-dist-index="2">
-      <p>Teste paragrafo 1.</p>
-      <p>Teste paragrafo 2.</p>
-      <p>Teste paragrafo 3.</p>
-      <p>Teste paragrafo 4.</p>
-    </div>
+    <h1 class="bohr__title" data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="1" data-bohr-dist-file="index.html" data-bohr-dist-index="1"><img alt="bohr.io" data-v-62cd5784="" height="125" src="/logo_bohr.png" width="500" /></h1>
+    <div class="hero__text" data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="2" data-bohr-dist-file="index.html" data-bohr-dist-index="2"><p data-v-62cd5784="">Texto aqui.</p>
+</div>
     <ul class="pioneers__list">
       <li
         class="pioneer__card"
