@@ -73,6 +73,7 @@ export default defineComponent({
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
+  margin-top: 20px;
 }
 
 .pioneer__card {
