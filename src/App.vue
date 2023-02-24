@@ -5,7 +5,7 @@ import pioneers from './assets/pioneers.json'
 export default defineComponent({
   data() {
     return {
-      pioneers,
+      pioneers: [...pioneers].sort(() => Math.random() - 0.5),
     }
   },
   mounted() {
