@@ -23,10 +23,10 @@ export default defineComponent({
       <img width="500" height="125" src="/logo_bohr.png" alt="bohr.io" />
     </h1>
     <div class="hero__text">
-      <p data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="1" data-bohr-dist-file="index.html" data-bohr-dist-index="1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
-      <p data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="2" data-bohr-dist-file="index.html" data-bohr-dist-index="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
-      <p data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="3" data-bohr-dist-file="index.html" data-bohr-dist-index="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
-      <p data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="4" data-bohr-dist-file="index.html" data-bohr-dist-index="4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam asperiores deserunt delectus quo incidunt officiis, nulla inventore, ex eum nemo optio. Repellat, voluptatibus iusto voluptas obcaecati commodi nulla temporibus doloribus?</p>
+      <p data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="1" data-bohr-dist-file="index.html" data-bohr-dist-index="1">Teste paragrafo 1.</p>
+      <p data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="2" data-bohr-dist-file="index.html" data-bohr-dist-index="2">Teste paragrafo 2.</p>
+      <p data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="3" data-bohr-dist-file="index.html" data-bohr-dist-index="3">Teste paragrafo 3.</p>
+      <p data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="4" data-bohr-dist-file="index.html" data-bohr-dist-index="4">Teste paragrafo 4.</p>
     </div>
     <ul class="pioneers__list">
       <li
