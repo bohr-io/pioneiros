@@ -22,7 +22,7 @@ export default defineComponent({
     <h1 class="bohr__title" data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="1" data-bohr-dist-file="index.html" data-bohr-dist-index="1"><img alt="bohr.io" border="0" data-v-58f9af68="" data-v-62cd5784="" data-v-c7b06533="" height="80" hspace="0" src="https://pioneiros.bohr.io/logo_bohr.png" style="width: 320px; height: 80px; margin: 0px; border: 0px solid black;" vspace="0" width="320" /></h1>
     <div class="hero__text" data-bohr-cms data-bohr-file="src/App.vue" data-bohr-index="2" data-bohr-dist-file="index.html" data-bohr-dist-index="2"><p data-v-58f9af68="" data-v-62cd5784="" data-v-c7b06533="">O bohr.io nasce com objetivo de impactar positivamente a experiência de quem programa, principalmente na etapa de deploy.<br data-v-c7b06533="" />
 Essa página registra o grupo das primeiras pessoas que acreditaram no potencial e resolveram apoiar a plataforma.<br data-v-c7b06533="" />
-Obrigado a cada um de vocês, <strong data-v-c7b06533="">100 Pioneiro</strong><strong>s</strong> do bohr.io!<br data-v-c7b06533="" />
+Obrigado a cada um de vocês, <strong data-v-c7b06533="">{{ pioneers.length }} Pioneiro</strong><strong>s</strong> do bohr.io!<br data-v-c7b06533="" />
 Publicado em 2023/02/24</p>
 </div>
     <ul class="pioneers__list">
